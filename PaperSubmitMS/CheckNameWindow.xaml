@@ -1,0 +1,42 @@
+﻿<Window x:Class="PaperSubmitMS.CheckNameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CheckNameWindow" Height="694.225" Width="600">
+    <Grid>
+        <Button Content="检查文件名" HorizontalAlignment="Left" Margin="451,325,0,0" VerticalAlignment="Top" Width="88" Click="CheckFilesNames"/>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Height="336" Margin="33,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="362" VerticalScrollBarVisibility="Auto"/>
+        <Label Content="Excel文件:" HorizontalAlignment="Left" Margin="33,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="文件位置:" HorizontalAlignment="Left" Margin="33,22,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="folderName" HorizontalAlignment="Left" Height="25" Margin="118,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316" />
+        <Button Content="选择文件夹" HorizontalAlignment="Left" Margin="451,28,0,0" VerticalAlignment="Top" Width="88" Click="GetFolder"/>
+        <TextBox x:Name="excelName" HorizontalAlignment="Left" Height="25" Margin="118,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" IsReadOnly="True"/>
+        <Button Content="选择Excel" HorizontalAlignment="Left" Margin="451,67,0,0" VerticalAlignment="Top" Width="88" Click="GetExcel"/>
+        <Label Content="文件名" HorizontalAlignment="Left" Margin="32,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="学号位置:" HorizontalAlignment="Left" Margin="118,107,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fileNumberPosition"  HorizontalAlignment="Left" Height="19" Margin="208,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Text="1"/>
+        <Label Content="学号长度:" HorizontalAlignment="Left" Margin="248,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.35,0.36"/>
+        <TextBox x:Name="fileNumberLength" HorizontalAlignment="Left" Height="19" Margin="358,111,0,0" TextWrapping="Wrap" Text="11" VerticalAlignment="Top" Width="35" />
+        <Label Content="Excel文件" HorizontalAlignment="Left" Margin="32,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="学号列号:" HorizontalAlignment="Left" Margin="142,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.459,1.36"/>
+        <Label Content="二级学科列号:" HorizontalAlignment="Left" Margin="416,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.329,0.88"/>
+        <TextBox x:Name="excelNumberPosition" HorizontalAlignment="Left" Height="18" Margin="208,184,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="35" PreviewTextInput  ="InputLimit" />
+        <TextBox x:Name="excelSubjectNumberPosition" HorizontalAlignment="Left" Height="18" Margin="506,184,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="35" PreviewTextInput="InputLimit"/>
+        <Label Content="姓名列号:" HorizontalAlignment="Left" Margin="268,180,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="excelStudentNamePosition" HorizontalAlignment="Left" Height="18" Margin="360,184,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="35" />
+        <Label Content="学校代码:" HorizontalAlignment="Left" Margin="416,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="schoolNumber" HorizontalAlignment="Left" Height="18" Margin="475,114,0,0" TextWrapping="Wrap" Text="10423" VerticalAlignment="Top" Width="64"/>
+        <Label Content="二级学科位置:" HorizontalAlignment="Left" Margin="118,137,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fileSubjectNumberPosition"  HorizontalAlignment="Left" Height="19" Margin="208,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Text="1"/>
+        <Label Content="二级学科代码长度:" HorizontalAlignment="Left" Margin="248,137,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="subjectNumberLenth" HorizontalAlignment="Left" Height="19" Margin="358,141,0,0" TextWrapping="Wrap" Text="11" VerticalAlignment="Top" Width="35" />
+        <ComboBox x:Name="selectFileType" HorizontalAlignment="Left" Margin="477,234,0,0" VerticalAlignment="Top" Width="64" SelectionChanged="selectFileType_SelectionChanged" >
+      
+            <ComboBoxItem Content="论文" />
+            <ComboBoxItem Content="自评表"/>
+        </ComboBox>
+        <Label Content="文件类型:" HorizontalAlignment="Left" Margin="416,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.426,2.48"/>
+        <Label Content="文件名长度:" HorizontalAlignment="Left" Margin="416,281,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.15,0.16"/>
+        <TextBox x:Name="fileNameLenth" HorizontalAlignment="Left" Height="23" Margin="494,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+
+    </Grid>
+</Window>

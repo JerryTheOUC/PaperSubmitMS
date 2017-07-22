@@ -68,7 +68,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CreateZip.xaml">
+    <Page Include="CheckNameWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateZipWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -80,10 +84,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CreateZip.xaml.cs">
-      <DependentUpon>CreateZip.xaml</DependentUpon>
+    <Compile Include="PaperNameChecker.cs" />
+    <Compile Include="CheckNameWindow.xaml.cs">
+      <DependentUpon>CheckNameWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CreatZip.cs" />
+    <Compile Include="CreateZipWindow.xaml.cs">
+      <DependentUpon>CreateZipWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZipCreater.cs" />
     <Compile Include="FilesController.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

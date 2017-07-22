@@ -4,5 +4,6 @@
         Title="OUC_Paper_Submit_Tool" Height="167.025" Width="571">
     <Grid>
         <Button Content="论文加密" HorizontalAlignment="Left" Margin="106,67,0,0" VerticalAlignment="Top" Width="75" Click="EncryptPaper" RenderTransformOrigin="0.44,-0.105"/>
+        <Button Content="论文送审检查" HorizontalAlignment="Left" Margin="311,67,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
     </Grid>
 </Window>

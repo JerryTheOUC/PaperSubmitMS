@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,8 +31,15 @@ namespace PaperSubmitMS
 
         private void EncryptPaper(object sender, RoutedEventArgs e)
         {
-            CreateZip createZip = new CreateZip();
-            createZip.ShowDialog();
+            CreateZipWindow createZipWindow = new CreateZipWindow();
+            createZipWindow.ShowDialog();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CheckNameWindow checkNameWindow = new CheckNameWindow();
+            checkNameWindow.ShowDialog();
+
         }
 
     }
